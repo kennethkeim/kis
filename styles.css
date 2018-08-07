@@ -18,11 +18,16 @@ body
 /***************** content *****************/
 
 /* welcome text */
-#topText
+#topTextOuter
 {
     margin-top: 26px;
     margin-bottom: 70px;
     text-align: justify;
+}
+
+#topTextInner {
+   width: 80%;
+   margin: auto;
 }
 
 /* div around contact info */
@@ -32,6 +37,7 @@ body
     box-shadow: 1px 1px 3px #d1d1d1;
     padding-top: 25px;
     border-radius: 3px;
+    float: right;
 }
 .contactInfo
 {
@@ -55,8 +61,17 @@ body
 }
 
 
-
 #auction-nudge-items
 {
     font-size: .8em;
+}
+
+
+
+
+/***************** footer *****************/
+
+footer {
+   height: 150px;
+   background: #313638;
 }
