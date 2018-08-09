@@ -8,7 +8,7 @@
     <!-- Bootstrap and my own CSS, Font Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
 
     <title>Keim Industrial Surplus</title>
@@ -21,21 +21,28 @@
     </nav>
 
 
-    <div class="container-fluid">
+    <div id="container1" class="container-fluid">
         <div class="row justify-content-between">
 
             <!-- welcome message -->
-            <div class="col-12 col-sm-6" id="topTextOuter">
+            <div class="col-12 col-sm-7" id="topTextOuter">
                <div id="topTextInner">
-                   <p>
-                       Welcome to Keim Industrial Surplus. We are buyers and sellers of industrial parts, tooling, and equipment.
-                        We sell a large assortment of industrial supplies on eBay. You can visit our <a href="https://www.ebay.com/str/keim77" target="_blank" rel="noopener noreferrer">eBay store</a> or get in touch with us directly.
-                   </p>
-                   <p>
-                       We don't have a retail store, but you are welcome to drop by if you need to pick something up at our warehouse.
-                   </p>
+                  <h5>eBay Store</h5>
+                  <p>
+                     Welcome to Keim Industrial Surplus. We sell a large assortment of industrial supplies on eBay. You can visit our eBay Store or get in touch with us directly. We don't have a retail store, but you are welcome to drop by if you need to pick something up at our warehouse.
+                  </p>
+
+                  <h5>Asset Removal</h5>
+                  <p>
+                     We also buy industrial equipment, parts, and tooling. Whether you are simply getting rid of excess assets, or doing a complete liquidation, we've got you covered.
+                  </p>
+                </div>
+                <div id="btnDiv">
+                   <a href="https://www.ebay.com/str/keim77" target="_blank" rel="noopener noreferrer" id="ebayBtn" class="btn btn-sm">eBay Store</a>
+                   <a href="tel:+1-937-779-1850" id="callBtn" class="btn btn-sm">Call us</a>
                 </div>
             </div>
+
 
             <!-- contact info and ebay store link -->
             <div class="col-sm-4 col-lg-3 mr-sm-3" id="contactInfoWrapper">
@@ -46,7 +53,7 @@
                 <div class="contactInfo">
                     <h6>Contact</h6>
                     <a href="mailto:indsurplus94@gmail.com"><i class="far fa-envelope"></i> indsurplus94@gmail.com</a>
-                    <br>
+
                     <a href="tel:+1-937-779-1850"><i class="fas fa-phone fa-sm"></i> 1-937-779-1850</a>
                 </div>
 
@@ -57,14 +64,28 @@
             </div>
 
         </div> <!-- row -->
+     </div> <!-- container -->
 
-        <!-- most recent ebay items from auction nudge tool -->
-        <h2 id="ebayItemsHeader">Recent eBay Items</h2>
-        <script type="text/javascript" src="//www.auctionnudge.com/feed/item/js/theme/columns/img_size/100/lang/english/SellerID/keimindustrialsurplus/siteid/0/MaxEntries/5/sortOrder/BestMatch"></script>
-        <div id="auction-nudge-items" class="auction-nudge"></div>
 
-    </div> <!-- container -->
 
+   <!-- most recent ebay items from auction nudge tool -->
+   <div id="container2" class="container-fluid">
+      <div class="container">
+           <h2>Recent eBay Items</h2>
+           <script type="text/javascript" src="//www.auctionnudge.com/feed/item/js/theme/columns/img_size/100/lang/english/SellerID/keimindustrialsurplus/siteid/0/MaxEntries/5/sortOrder/BestMatch"></script>
+           <div id="auction-nudge-items" class="auction-nudge"></div>
+       </div>
+    </div>
+
+    <footer>
+
+      <div>
+         <a href="mailto:indsurplus94@gmail.com" class="contact">indsurplus94@gmail.com</a>
+         <a href="https://goo.gl/maps/P8nhyQUNmrG2" id="address" target="_blank" rel="noopener noreferrer">8319 Ash Ridge Arnheim Rd<br>Sardinia, OH 45171<br>United States</a>
+         <a href="tel:+1-937-779-1850" class="contact">1-937-779-1850</a>
+      </div>
+
+   </footer>
 
 
     <!-- Bootstrap jQuery, Popper, and Javascript -->
