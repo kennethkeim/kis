@@ -27,7 +27,8 @@ footer a,
 
 h5,
 h6,
-h2 {
+h2,
+h1 {
    font-family: 'Montserrat', sans-serif;
 }
 
@@ -49,10 +50,11 @@ h2 {
    text-align-last: center;
 }
 
-#topTextInner h5 {
+#topTextInner h1 {
    display: block;
    width: 80%;
    margin: auto;
+   font-size: 1.5em;
 }
 
 #topTextInner p {
