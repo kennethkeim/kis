@@ -1,63 +1,62 @@
-/***************** body *****************/
 
-body
-{
+body {
     text-align: center;
     padding-bottom:0px;
     background: #fefefe;
 }
 
+
+/* the two main containers (fluid) */
 #container1 {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 70px;
+}
+#container2 {
+   padding-top: 70px;
+   padding-bottom: 100px;
 }
 
 
 
+/* fonts */
+.contactInfo a,
+footer a,
+.navbar-brand {
+   font-family: 'Inconsolata', monospace;
+}
 
-/***************** content *****************/
+h5,
+h6,
+h2 {
+   font-family: 'Montserrat', sans-serif;
+}
 
-/* welcome text */
-#topTextOuter
-{
+
+
+/* welcome text, ebay and call buttons */
+#topTextOuter {
     margin-top: 26px;
-    /* margin-bottom: 70px; */
-    text-align: justify;
-    -moz-text-align-last: center;
-    text-align-last: center;
+    text-align: center;
+    margin-bottom: 60px;
 }
 
 #topTextInner {
    width: 80%;
    margin: auto;
    margin-bottom: 20px;
+   text-align: justify;
+   -moz-text-align-last: center;
+   text-align-last: center;
+}
+
+#topTextInner h5 {
+   display: block;
+   width: 80%;
+   margin: auto;
 }
 
 #topTextInner p {
    font-size: .9em;
-}
-
-/* div around contact info */
-#contactInfoWrapper
-{
-    /* margin-bottom: 70px; */
-    box-shadow: 1px 1px 3px #d1d1d1;
-    padding-top: 25px;
-    border-radius: 3px;
-    float: right;
-}
-.contactInfo
-{
-    margin-bottom: 15px;
-    font-size: .9em;
-}
-
-.contactInfo a
-{
-   display: inline-block;
-   /* font-size: .9em; */
-   padding: 3px 4px 3px 4px; /* easier to click */
-   border-radius: 3px;
 }
 
 #ebayBtn {
@@ -68,7 +67,6 @@ body
    background: #0056b3;
    color: #fff;
 }
-
 
 #callBtn {
    width: 88.1px; /* same as ebay btn */
@@ -83,34 +81,52 @@ body
 
 
 
+/* div around contact info */
+#contactInfoWrapper {
+    box-shadow: 1px 1px 3px #d1d1d1;
+    padding-top: 25px;
+    border-radius: 3px;
+    float: right;
+}
+.contactInfo {
+    margin-bottom: 15px;
+    font-size: .9em;
+}
 
-
-/* auction item links: hover */
-#container2 {
-   padding-top: 80px;
-   padding-bottom: 100px;
+.contactInfo a {
+   display: inline-block;
+   padding: 3px 4px 3px 4px; /* easier to click */
+   border-radius: 3px;
 }
 
 
-#auction-nudge-items a:hover
-{
+
+/* auction nudge items */
+
+#auction-nudge-items a:hover {
     text-decoration: underline;
 }
 
-#auction-nudge-items
-{
+#auction-nudge-items {
     font-size: .8em;
 }
 
+/* fix search input bug */
+#an-search-box {
+   height: 29.2px;
+}
+
+
+
+/* footer */
 footer {
-   height: 150px;
+   height: 170px;
    background: #313638;
    text-align: center;
 }
 
 footer a {
    color: #fff;
-   font-family: 'Inconsolata', monospace;
    font-size: .9em;
    display: inline-block;
 }
@@ -120,21 +136,32 @@ footer #address {
 }
 
 footer .contact {
-   /* line-height: 64px; */
-   /* margin-bottom: 30px; */
    position: relative;
    bottom: 22px;
 }
 
 footer div {
-   margin-top: 50px;
-   height: 64px;
+   margin-top: 60px;
    display: inline-block;
 }
 
 
 
-
-
-
-/*  */
+/* media query to change the layout and position of elements on smaller screens */
+/* collapse the content in the footer on top of each other */
+@media screen and (max-width:770px) {
+     footer a {
+       display: block;
+       margin-top: 10px;
+       margin-bottom: 10px;
+     }
+     footer .contact {
+        position: static;
+     }
+     footer #address {
+        margin: 0;
+     }
+     footer div {
+        margin: 0;
+     }
+   }
