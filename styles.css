@@ -50,7 +50,8 @@ h1 {
    text-align-last: center;
 }
 
-#topTextInner h1 {
+#topTextInner h1,
+#topTextInner h2 {
    display: block;
    width: 80%;
    margin: auto;
