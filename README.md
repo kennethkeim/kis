@@ -1,1 +1,1 @@
-Business website for Keim Industrial Surplus
+source code for https://www.keimindustrialsurplus.com 
