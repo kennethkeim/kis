@@ -1,1 +1,1 @@
-source code for https://www.keimindustrialsurplus.com 
+source code for a small business website.
