@@ -1,44 +1,74 @@
 
 body {
     text-align: center;
-    padding-bottom:0px;
-    background: #fefefe;
+    padding-bottom: 0px;
+    background: #fdfdfd;
 }
+
 
 
 /* the two main containers (fluid) */
 #container1 {
-    padding-top: 100px;
+    padding-top: 80px;
     padding-bottom: 70px;
 }
 #container2 {
    padding-top: 70px;
    padding-bottom: 100px;
+   background: #0a3d62;
+   color: #fff;
 }
 
 
 
-/* fonts */
+
+/******************* fonts *******************/
 .contactInfo a,
-footer a,
-.navbar-brand {
+footer a {
    font-family: 'Inconsolata', monospace;
 }
 
 h5,
 h6,
 h2,
-h1 {
+h1,
+p {
    font-family: 'Montserrat', sans-serif;
 }
 
 
 
-/* welcome text, ebay and call buttons */
+
+/******************* header and banner *******************/
+#header {
+   padding-top: 30px;
+   padding-bottom: 30px;
+}
+
+img {
+   width: 130px;
+   border-radius: 1px;
+}
+
+#banner {
+   padding: 15px 0 15px 0;
+   background: #0a3d62;
+   color: #fff;
+   font-size: 1.5em;
+}
+
+
+
+/******************* welcome text *******************/
 #topTextOuter {
-    margin-top: 26px;
     text-align: center;
-    margin-bottom: 60px;
+    background: #fff;
+    margin-left: 15px;
+    margin-right: 15px;
+    box-shadow: 0 0 3px rgba(209, 209, 209, 0.8);
+    border-radius: 2px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 #topTextInner {
@@ -62,34 +92,43 @@ h1 {
    font-size: .9em;
 }
 
+
+
+
+
+/***************** ebay and call buttons *****************/
 #ebayBtn {
-   color: #0056b3;
-   border: 1px solid #0056b3;
+   color: #0a3d62;
+   border: 1px solid #0a3d62;
 }
 #ebayBtn:hover {
-   background: #0056b3;
+   background: #0a3d62;
    color: #fff;
 }
 
 #callBtn {
    width: 88.1px; /* same as ebay btn */
    margin-left: 30px;
-   background: #0056b3;
+   background: #0a3d62;
    color: #fff;
-   border: 1px solid #0056b3;
+   border: 1px solid #0a3d62;
 }
 #callBtn:hover {
-   background: #2e74c0;
+   background: #204E70;
 }
 
 
 
-/* div around contact info */
+
+
+/**************** contact info ****************/
 #contactInfoWrapper {
-    box-shadow: 1px 1px 3px #d1d1d1;
-    padding-top: 25px;
-    border-radius: 3px;
-    float: right;
+   background: #fff;
+   margin-left: 15px;
+   margin-right: 15px;
+   box-shadow: 0 0 3px rgba(209, 209, 209, 0.8);
+   padding-top: 25px;
+   border-radius: 2px;
 }
 .contactInfo {
     margin-bottom: 15px;
@@ -97,6 +136,7 @@ h1 {
 }
 
 .contactInfo a {
+   color: #0056b3;
    display: inline-block;
    padding: 3px 4px 3px 4px; /* easier to click */
    border-radius: 3px;
@@ -104,7 +144,11 @@ h1 {
 
 
 
-/* auction nudge items */
+
+/**************** auction nudge items ****************/
+#container2 h2 {
+   margin-bottom: 40px;
+}
 
 #auction-nudge-items a:hover {
     text-decoration: underline;
@@ -115,13 +159,65 @@ h1 {
 }
 
 /* fix search input bug */
-#an-search-box {
+#overide #auction-nudge-items #an-search-box {
    height: 29.2px;
+   background: #fff;
+   color: #000;
+}
+
+/* search button */
+#an-search-submit {
+   color: #000;
+}
+
+/* select input */
+#an-cats-nav {
+   padding-top: 2px;
+   padding-bottom: 4px;
+}
+
+
+/* background color for every other row */
+tr.alt td.title,
+tr.alt td.bids,
+tr.alt td.price,
+tr.alt td.ends {
+   background-color: #fff;
+}
+
+/* remove padding so images appear same height as the row */
+#overide #auction-nudge-items th,
+#overide #auction-nudge-items td {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+/* spacing between rows */
+#overide #auction-nudge-items tr {
+    border: 10px solid #0a3d62;
+}
+
+#overide #auction-nudge-items td.title {
+   padding-left: 10px;
+}
+
+tr.alt .image {
+   background: #0a3d62;
+}
+
+tr.alt {
+   background: #fdfdfd;
+   color: #000;
+}
+
+table {
+   margin-bottom: 20px;
 }
 
 
 
-/* footer */
+
+/**************** footer ****************/
 footer {
    height: 170px;
    background: #313638;
@@ -150,6 +246,8 @@ footer div {
 
 
 
+
+
 /* media query to change the layout and position of elements on smaller screens */
 /* collapse the content in the footer on top of each other */
 @media screen and (max-width:770px) {
@@ -167,4 +265,11 @@ footer div {
      footer div {
         margin: 0;
      }
+     #topTextOuter {
+        margin-bottom: 60px;
+     }
+     #overide #auction-nudge-items td.title {
+        padding-left: 0;
+     }
+
    }
