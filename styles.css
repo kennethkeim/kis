@@ -15,8 +15,6 @@ body {
 #container2 {
    padding-top: 70px;
    padding-bottom: 100px;
-   background: #0a3d62;
-   color: #fff;
 }
 
 
@@ -158,31 +156,25 @@ img {
     font-size: .8em;
 }
 
-/* fix search input bug */
+/* search input */
 #overide #auction-nudge-items #an-search-box {
-   height: 29.2px;
-   background: #fff;
-   color: #000;
+   height: 29.2px; /* fix bug */
+   border: 1px solid #0a3d62;
+   border-radius: 2px;
 }
 
 /* search button */
-#an-search-submit {
-   color: #000;
+#overide #auction-nudge-items #an-search-submit {
+   border: 1px solid #0a3d62;
+   border-radius: 2px;
+   background: #0a3d62;
+   color: #fff;
 }
 
 /* select input */
 #an-cats-nav {
    padding-top: 2px;
    padding-bottom: 4px;
-}
-
-
-/* background color for every other row */
-tr.alt td.title,
-tr.alt td.bids,
-tr.alt td.price,
-tr.alt td.ends {
-   background-color: #fff;
 }
 
 /* remove padding so images appear same height as the row */
@@ -194,25 +186,26 @@ tr.alt td.ends {
 
 /* spacing between rows */
 #overide #auction-nudge-items tr {
-    border: 10px solid #0a3d62;
+    border: 10px solid #fdfdfd;
 }
 
 #overide #auction-nudge-items td.title {
    padding-left: 10px;
 }
 
-tr.alt .image {
-   background: #0a3d62;
-}
-
-tr.alt {
-   background: #fdfdfd;
+/* background color for every other row */
+#overide #auction-nudge-items tr.alt {
+   background: #f7f7f7;
    color: #000;
+}
+#auction-nudge-items tr.alt .image {
+   background: #fdfdfd;
 }
 
 table {
    margin-bottom: 20px;
 }
+
 
 
 
