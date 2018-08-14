@@ -195,7 +195,8 @@ img {
 
 /* background color for every other row */
 #overide #auction-nudge-items tr.alt {
-   background: #f7f7f7;
+   /* background: #f7f7f7; */
+   background: #f0f0f0;
    color: #000;
 }
 #auction-nudge-items tr.alt .image {
