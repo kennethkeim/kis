@@ -21,6 +21,37 @@
 
     <link href="styles.css" rel="stylesheet">
 
+    <!-- Global site tag (gtag.js) - Google Ads: 962328854 -->
+   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-962328854"></script>
+   <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'AW-962328854');
+   </script>
+
+
+   <!-- Event snippet for Phone Click Tracker conversion page
+   In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+   <script>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof(url) != 'undefined') {
+            window.location = url;
+          }
+        };
+        gtag('event', 'conversion', {
+            'send_to': 'AW-962328854/Wk5aCJ60oIgBEJby78oD',
+            'event_callback': callback
+        });
+        return false;
+      }
+   </script>
+
+
+
+
     <title>Keim Industrial Surplus - Dealers in industrial equipment</title>
 </head>
 <body id="overide">
@@ -54,7 +85,7 @@
                 </div>
                 <div>
                    <a href="https://www.ebay.com/str/keim77" target="_blank" rel="noopener noreferrer" id="ebayBtn" class="btn btn-sm">eBay Store</a>
-                   <a href="tel:+1-937-779-1850" id="callBtn" class="btn btn-sm">Call us</a>
+                   <a href="tel:+1-937-779-1850" id="callBtn" class="btn btn-sm" onclick="gtag_report_conversion()">Call us</a>
                 </div>
             </div>
 
@@ -69,7 +100,7 @@
                     <h6>Contact</h6>
                     <a href="mailto:indsurplus94@gmail.com"><i class="far fa-envelope"></i> indsurplus94@gmail.com</a>
                     <br>
-                    <a href="tel:+1-937-779-1850"><i class="fas fa-phone fa-sm"></i> 1-937-779-1850</a>
+                    <a href="tel:+1-937-779-1850" onclick="gtag_report_conversion()"><i class="fas fa-phone fa-sm"></i> 1-937-779-1850</a>
                 </div>
 
                 <div class="contactInfo">
@@ -100,7 +131,7 @@
       <div>
          <a href="mailto:indsurplus94@gmail.com" class="contact">indsurplus94@gmail.com</a>
          <a href="https://goo.gl/maps/P8nhyQUNmrG2" id="address" target="_blank" rel="noopener noreferrer">8319 Ash Ridge Arnheim Rd<br>Sardinia, OH 45171<br>United States</a>
-         <a href="tel:+1-937-779-1850" class="contact">1-937-779-1850</a>
+         <a href="tel:+1-937-779-1850" class="contact" onclick="gtag_report_conversion()">1-937-779-1850</a>
       </div>
    </footer>
 
