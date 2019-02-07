@@ -3,8 +3,6 @@
 /********* FONTS *********/
 body {
    font-family: 'Lato', sans-serif;
-   /* font-family: 'Montserrat', sans-serif; */
-   /* font-family: 'Inconsolata', monospace; */
 }
 
 
@@ -18,11 +16,16 @@ body {
 /********* GROUPS OF CONTENT *********/
 
 body {
+   background: 
+   linear-gradient(
+     rgba(0,0,0,0.7),
+     rgba(0,0,0,0.9)
+   ),
+   url("./ind0.jpg");
+   background-size: 100%;
+
    text-align: center;
-   background: #191919;
-   /* background: #fff; */
    color: #fff;
-   /* color: #191919; */
 }
 
 h1 {
@@ -31,25 +34,20 @@ h1 {
 }
 
 h2 {
-   font-size: 1.5rem;
-   margin-bottom: 120px;
+   margin-bottom: 110px;
 }
 
-main {
-   font-size: 1.5rem;
-}
-
-main p:nth-child(1) {
-   width: 60%;
-   margin: 0 auto 20px auto;
+main, 
+h2 {
+   font-size: 1.7rem;
 }
 
 #callBtn {
-   margin-bottom: 20px;
+   margin-bottom: 50px;
 }
 
 #ebayBtn {
-   font-size: 1rem;
+   display: inline;
 }
 
 
@@ -96,24 +94,45 @@ footer div {
 
 
 
-
+/* MEDIA QUERIES */
+@media screen and (max-width:1070px) {
+   h1 { font-size: 4.5rem; }
+}
+@media screen and (max-width:970px) {
+   h1 { font-size: 4rem; }
+}
+@media screen and (max-width:865px) {
+   h1 { font-size: 3.5rem; }
+   main, h2 { font-size: 1.5rem }
+}
+@media screen and (max-width:760px) {
+   h1 { font-size: 3rem; }
+}
+@media screen and (max-width:653px) {
+   main { font-size: 1.3rem; }
+   h2 { 
+      font-size: 1.2rem;
+      margin-bottom: 80px;
+   }
+   body { background-size: 300%; }
+}
 
 
 /* media query to change the layout and position of elements on smaller screens */
 /* collapse the content in the footer on top of each other */
 @media screen and (max-width:770px) {
-     footer a {
-       display: block;
-       margin-top: 10px;
-       margin-bottom: 10px;
-     }
-     footer .contact {
-        position: static;
-     }
-     footer #address {
-        margin: 0;
-     }
-     footer div {
-        margin: 0;
-     }
+   footer a {
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 10px;
    }
+   footer .contact {
+      position: static;
+   }
+   footer #address {
+      margin: 0;
+   }
+   footer div {
+      margin: 0;
+   }
+}
