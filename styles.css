@@ -1,19 +1,5 @@
 
-
-/********* FONTS *********/
-body {
-   font-family: 'Lato', sans-serif;
-}
-
-
-
-
-/********* COLORS *********/
-
-
-
-
-/********* GROUPS OF CONTENT *********/
+/********* MAIN CONTENT *********/
 
 body {
    background: 
@@ -22,8 +8,10 @@ body {
      rgba(0,0,0,0.9)
    ),
    url("./ind0.jpg");
-   background-size: 100%;
+   background-size: cover;
+   background-position: center;
 
+   font-family: 'Lato', sans-serif;
    text-align: center;
    color: #fff;
 }
@@ -31,6 +19,7 @@ body {
 h1 {
    font-size: 5rem;
    display: block;
+   color: #0055B1;
 }
 
 h2 {
@@ -55,9 +44,10 @@ h2 {
 
 
 
-/* STICKY FOOTER */
+/********* STICKY FOOTER *********/
 footer {
-   height: 125px;
+   min-height: 125px;
+   /* height: auto; */
    text-align: center;
 }
 #content {
@@ -69,9 +59,7 @@ footer {
 
 
 
-/**************** footer ****************/
-
-
+/********* FOOTER ELEMENTS *********/
 footer a {
    display: inline-block;
 }
@@ -94,7 +82,9 @@ footer div {
 
 
 
-/* MEDIA QUERIES */
+/********* MEDIA QUERIES *********/
+
+/* Manage font size on smaller screens */
 @media screen and (max-width:1070px) {
    h1 { font-size: 4.5rem; }
 }
@@ -114,17 +104,15 @@ footer div {
       font-size: 1.2rem;
       margin-bottom: 80px;
    }
-   body { background-size: 300%; }
+   /* body { background-size: 300%; } */
 }
 
 
-/* media query to change the layout and position of elements on smaller screens */
-/* collapse the content in the footer on top of each other */
+/* collapse the links in the footer on top of each other for smaller screens */
 @media screen and (max-width:770px) {
    footer a {
       display: block;
-      margin-top: 10px;
-      margin-bottom: 10px;
+      margin: 10px auto 10px auto;
    }
    footer .contact {
       position: static;
@@ -134,5 +122,8 @@ footer div {
    }
    footer div {
       margin: 0;
+   }
+   #content {
+   min-height: calc(100vh - 200px);
    }
 }
