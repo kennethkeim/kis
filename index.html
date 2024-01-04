@@ -1,96 +1,125 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
 
     <!-- required by Bootstrap -->
-    <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1 shrink-to-fit=no" />
 
     <!-- canonical url -->
-    <link rel="canonical" href="https://www.keimindustrialsurplus.com">
+    <link rel="canonical" href="https://www.keimindustrialsurplus.com" />
 
-    <meta name="description" content="The home page for Keim Industrial Surplus. We buy industrial surplus and scrap, and we also have an eBay Store.">
+    <meta
+      name="description"
+      content="The home page for Keim Industrial Surplus. We buy industrial surplus and scrap, and we also have an eBay Store." />
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous" />
 
-   <!-- fonts  -->
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <!-- fonts  -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet" />
 
-
-    <link href="styles.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet" />
 
     <!-- Global site tag (gtag.js) - Google Ads: 962328854 -->
-   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-962328854"></script>
-   <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-962328854"></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag("js", new Date())
 
-      gtag('config', 'AW-962328854');
-   </script>
+      gtag("config", "AW-962328854")
+    </script>
 
-
-   <!-- Event snippet for Phone Click Tracker conversion page
+    <!-- Event snippet for Phone Click Tracker conversion page
    In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
-   <script>
+    <script>
       function gtag_report_conversion(url) {
         var callback = function () {
-          if (typeof(url) != 'undefined') {
-            window.location = url;
+          if (typeof url != "undefined") {
+            window.location = url
           }
-        };
-        gtag('event', 'conversion', {
-            'send_to': 'AW-962328854/Wk5aCJ60oIgBEJby78oD',
-            'event_callback': callback
-        });
-        return false;
+        }
+        gtag("event", "conversion", {
+          send_to: "AW-962328854/Wk5aCJ60oIgBEJby78oD",
+          event_callback: callback,
+        })
+        return false
       }
-   </script>
-
+    </script>
 
     <title>Keim Industrial Surplus - Buyers of industrial surplus and scrap</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <div id="content">
+      <div class="container-fluid">
+        <h1>KEIM INDUSTRIAL SURPLUS</h1>
 
-        <div class="container-fluid">
-            <h1>KEIM INDUSTRIAL SURPLUS</h1>
+        <div class="row justify-content-center">
+          <main class="col-sm-11 col-md-9 col-lg-8 col-xl-7">
+            <h2>Buyers of industrial surplus and scrap.</h2>
 
-            <div class="row justify-content-center">
-                <main class="col-sm-11 col-md-9 col-lg-8 col-xl-7">
-                    <h2>Buyers of industrial surplus and scrap.</h2>
+            <!-- <p>Call us and we will be glad to talk to you about buying your surplus items, scrap, or cleaning up your area.</p> -->
+            <p>
+              Call us and we will be glad to talk to you about buying your surplus items
+              or scrap, and cleaning up your area.
+            </p>
+            <!-- <p>Call us and we will be glad to talk to you about buying your surplus items or scrap. We'll take care of any necessary cleanup.</p> -->
+            <!-- <p>Call us if you have industrial equipment or scrap to sell! We're interested in most items bigger than a small car.</p> -->
+            <!-- <p>Call us if you have industrial items or scrap to sell. We'll buy by the item, lot, or room, and take care of any necessary cleanup.</p> -->
+            <!-- <p>Call us if you have industrial items or scrap to sell. We'll take care of any necessary cleanup.</p> -->
 
-                    <!-- <p>Call us and we will be glad to talk to you about buying your surplus items, scrap, or cleaning up your area.</p> -->
-                    <p>Call us and we will be glad to talk to you about buying your surplus items or scrap, and cleaning up your area.</p>
-                    <!-- <p>Call us and we will be glad to talk to you about buying your surplus items or scrap. We'll take care of any necessary cleanup.</p> -->
-                    <!-- <p>Call us if you have industrial equipment or scrap to sell! We're interested in most items bigger than a small car.</p> -->
-                    <!-- <p>Call us if you have industrial items or scrap to sell. We'll buy by the item, lot, or room, and take care of any necessary cleanup.</p> -->
-                    <!-- <p>Call us if you have industrial items or scrap to sell. We'll take care of any necessary cleanup.</p> -->
-
-                    <a href="tel:+1-937-779-1850" id="callBtn" class="btn btn-primary" onclick="gtag_report_conversion()">Call us</a>
-                </main>
-            </div>
+            <a
+              href="tel:+1-937-779-1850"
+              id="callBtn"
+              class="btn btn-primary"
+              onclick="gtag_report_conversion()"
+              >Call us</a
+            >
+          </main>
         </div>
-
+      </div>
     </div>
     <footer>
-        <p>Check out our <a href="https://www.ebay.com/str/keim77" target="_blank" rel="noopener noreferrer" id="ebayBtn">eBay Store</a></p>
-    
-        <div>
-            <a href="mailto:ray1141970@yahoo.com" class="contact">ray1141970@yahoo.com</a>
-            <a href="https://goo.gl/maps/P8nhyQUNmrG2" id="address" target="_blank" rel="noopener noreferrer">8319 Ash Ridge Arnheim
-                Rd<br>Sardinia, OH 45171<br>United States</a>
-            <a href="tel:+1-937-779-1850" class="contact" onclick="gtag_report_conversion()">1-937-779-1850</a>
-        </div>
-    </footer>
+      <p>
+        Check out our
+        <a
+          href="https://www.ebay.com/str/keim77"
+          target="_blank"
+          rel="noopener noreferrer"
+          id="ebayBtn"
+          >eBay Store</a
+        >
+      </p>
 
+      <div>
+        <a href="mailto:ray1141970@yahoo.com" class="contact">ray1141970@yahoo.com</a>
+        <a
+          href="https://goo.gl/maps/P8nhyQUNmrG2"
+          id="address"
+          target="_blank"
+          rel="noopener noreferrer"
+          >8319 Ash Ridge Arnheim Rd<br />Sardinia, OH 45171<br />United States</a
+        >
+        <a href="tel:+1-937-779-1850" class="contact" onclick="gtag_report_conversion()"
+          >1-937-779-1850</a
+        >
+      </div>
+    </footer>
 
     <!-- Bootstrap jQuery, Popper, and Javascript (in case we need it sometime) -->
     <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
-
-</body>
+  </body>
 </html>

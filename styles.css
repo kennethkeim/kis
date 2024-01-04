@@ -1,129 +1,123 @@
-
 /********* MAIN CONTENT *********/
 
 body {
-   background: 
-   linear-gradient(
-     rgba(0,0,0,0.7),
-     rgba(0,0,0,0.9)
-   ),
-   url("./ind0.jpg");
-   background-size: cover;
-   background-position: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url("./ind0.jpg");
+  background-size: cover;
+  background-position: center;
 
-   font-family: 'Lato', sans-serif;
-   text-align: center;
-   color: #fff;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  color: #fff;
 }
 
 h1 {
-   font-size: 5rem;
-   display: block;
-   color: #0055B1;
+  font-size: 5rem;
+  display: block;
+  color: #0055b1;
 }
 
 h2 {
-   margin-bottom: 110px;
+  margin-bottom: 110px;
 }
 
-main, 
+main,
 h2 {
-   font-size: 1.7rem;
+  font-size: 1.7rem;
 }
 
 #callBtn {
-   margin-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 #ebayBtn {
-   display: inline;
+  display: inline;
 }
-
-
-
-
-
 
 /********* STICKY FOOTER *********/
 footer {
-   min-height: 125px;
-   /* height: auto; */
-   text-align: center;
+  min-height: 125px;
+  /* height: auto; */
+  text-align: center;
 }
 #content {
-   padding: 40px 0 50px 0;
-   min-height: calc(100vh - 125px);
-   margin: 0 auto;
+  padding: 40px 0 50px 0;
+  min-height: calc(100vh - 125px);
+  margin: 0 auto;
 }
-
-
-
 
 /********* FOOTER ELEMENTS *********/
 footer a {
-   display: inline-block;
+  display: inline-block;
 }
 
 footer #address {
-   margin: auto 40px auto 40px;
+  margin: auto 40px auto 40px;
 }
 
 footer .contact {
-   position: relative;
-   width: 176px;
-   bottom: 22px;
+  position: relative;
+  width: 176px;
+  bottom: 22px;
 }
 
 footer div {
-   display: inline-block;
+  display: inline-block;
 }
-
-
-
-
 
 /********* MEDIA QUERIES *********/
 
 /* Manage font size on smaller screens */
-@media screen and (max-width:1070px) {
-   h1 { font-size: 4.5rem; }
+@media screen and (max-width: 1070px) {
+  h1 {
+    font-size: 4.5rem;
+  }
 }
-@media screen and (max-width:970px) {
-   h1 { font-size: 4rem; }
+@media screen and (max-width: 970px) {
+  h1 {
+    font-size: 4rem;
+  }
 }
-@media screen and (max-width:865px) {
-   h1 { font-size: 3.5rem; }
-   main, h2 { font-size: 1.5rem }
+@media screen and (max-width: 865px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+  main,
+  h2 {
+    font-size: 1.5rem;
+  }
 }
-@media screen and (max-width:760px) {
-   h1 { font-size: 3rem; }
+@media screen and (max-width: 760px) {
+  h1 {
+    font-size: 3rem;
+  }
 }
-@media screen and (max-width:653px) {
-   main { font-size: 1.3rem; }
-   h2 { 
-      font-size: 1.2rem;
-      margin-bottom: 80px;
-   }
-   /* body { background-size: 300%; } */
+@media screen and (max-width: 653px) {
+  main {
+    font-size: 1.3rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+    margin-bottom: 80px;
+  }
+  /* body { background-size: 300%; } */
 }
-
 
 /* collapse the links in the footer on top of each other for smaller screens */
-@media screen and (max-width:770px) {
-   footer a {
-      display: block;
-      margin: 10px auto 10px auto;
-   }
-   footer .contact {
-      position: static;
-   }
-   footer #address {
-      margin: 0;
-   }
-   footer div {
-      margin: 0;
-   }
-   #content {
-   min-height: calc(100vh - 200px);
-   }
+@media screen and (max-width: 770px) {
+  footer a {
+    display: block;
+    margin: 10px auto 10px auto;
+  }
+  footer .contact {
+    position: static;
+  }
+  footer #address {
+    margin: 0;
+  }
+  footer div {
+    margin: 0;
+  }
+  #content {
+    min-height: calc(100vh - 200px);
+  }
 }
