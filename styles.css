@@ -35,33 +35,26 @@ h2 {
 
 /********* STICKY FOOTER *********/
 footer {
-  min-height: 125px;
+  min-height: 160px;
   /* height: auto; */
   text-align: center;
 }
 #content {
   padding: 40px 0 50px 0;
-  min-height: calc(100vh - 125px);
+  min-height: calc(100vh - 160px);
   margin: 0 auto;
 }
 
 /********* FOOTER ELEMENTS *********/
-footer a {
-  display: inline-block;
+
+footer .row2 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-footer #address {
-  margin: auto 40px auto 40px;
-}
-
-footer .contact {
-  position: relative;
-  width: 176px;
-  bottom: 22px;
-}
-
-footer div {
-  display: inline-block;
+footer .row2 article {
+  margin: 20px;
 }
 
 /********* MEDIA QUERIES *********/
@@ -104,19 +97,6 @@ footer div {
 
 /* collapse the links in the footer on top of each other for smaller screens */
 @media screen and (max-width: 770px) {
-  footer a {
-    display: block;
-    margin: 10px auto 10px auto;
-  }
-  footer .contact {
-    position: static;
-  }
-  footer #address {
-    margin: 0;
-  }
-  footer div {
-    margin: 0;
-  }
   #content {
     min-height: calc(100vh - 200px);
   }
